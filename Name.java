@@ -1,40 +1,23 @@
-package Block_1_1;
+package p;
 
 public class Name {
-    private String oneName;
-    private String name;
-    private String twoName;
 
-   public Name(String name){
-        this.name = name;
+    String firstName;
+    String secondName;
+    String thirdName;
+
+    public Name(String firstName, String secondName) {
+        this(firstName,secondName,null);
     }
 
-    public Name(String oneName, String name, String twoName){
-        this.oneName = oneName;
-        this.name = name;
-        this.twoName= twoName;
+    public Name(String firstName) {
+        this(firstName,null,null);
     }
 
-    public Name(String oneName, String name){
-        this.oneName = oneName;
-        this.name = name;
+    public Name(String firstName, String secondName, String thirdName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.thirdName = thirdName;
     }
-
-    public String toString(){
-        return oneName + " " + name+ " " +twoName;
-    }
-}
-class Name_2{
-    public static void main(String[] args) {
-        Name n1 = new Name("Клеопатра");
-        Name n2 = new Name("Пушкин","Александр", "Сергеевич");
-        Name n3 = new Name("Маяковский","Владимир");
-
-        System.out.println(n1.toString());
-        System.out.println(n2.toString());
-        System.out.println(n3.toString());
-    }
-
 
 }
-
